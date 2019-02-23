@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="huizen">
+      <h1>Hoi</h1>
+    </div>
+    <script type="module" src="bundle.js" charset="utf-8"></script>
+    <!-- <script>
+      var MongoClient = require('mongodb').MongoClient;
+      var url = "mongodb://localhost:27017/";
+
+      MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+        var dbo = db.db("huis");
+        dbo.collection("nieuwHuis").find({}).toArray(function(err, result) {
+          if (err) throw err;
+          // console.log(result);
+          // result.forEach(function(element){
+          //   console.log(element.adres)
+          // })
+          db.close();
+          result.forEach(function(element){
+            //console.log(element.adres)
+             document.getElementById('huizen').innerHTML += "<p>" + element.adres + "</p>";
+          })
+        });
+
+      });
+
+    </script> -->
+  </body>
+</html>
